@@ -5,11 +5,16 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 1024px) {
+  .place__image {
+      max-width: 440px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .place__image {
       max-width: 100%;
       height: auto;
-      margin-top: 30px;
+  
     }
   }
 

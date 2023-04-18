@@ -3,36 +3,33 @@
   column-gap: 40px;
   row-gap: 48px;
   grid-template-columns: minmax(1%, 460px) 1fr;
-  grid-template-rows: 1fr;
   grid-template-areas: "title website" "image paragraphs";
   overflow: hidden;
-  margin-top: 90px;
+  max-width: 100%;
 }
-@media only screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1024px) {
   .place {
-    margin-top: 60px;
-    column-gap: 30px;
+    grid-template-columns: minmax(1%, 440px) 1fr;
+    column-gap: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: minmax(1%, 340px) 1fr;
+    column-gap: 26px;
+    margin: 0 auto;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
   .place {
-    margin-top: 60px;
-    column-gap: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .place {
-    grid-template-columns: minmax(1%, 300px) 1fr;
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .place {
-    margin-top: 30px;
     grid-template-columns: 1fr;
-    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place {
+    grid-gap: 32px;
   }
 }
