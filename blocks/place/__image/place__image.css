@@ -2,24 +2,25 @@
   grid-area: image;
   max-width: 460px;
   object-fit: cover;
-  margin: 0;
-  padding: 0;
+
 }
 @media screen and (max-width: 1024px) {
   .place__image {
-      max-width: 440px;
+    max-width: 440px;
+    height: 440px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .place__image {
-      max-width: 100%;
-      height: auto;
+    max-width: 340px;
+    height: 340px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .place__image {
+    width: 320px;
+   object-fit: cover;
+  }
   
-    }
-  }
-
-@media only screen and (max-width: 425px) {
-  .place__image {
-  max-width: 250px;
-  }
 }

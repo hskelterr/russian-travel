@@ -6,19 +6,20 @@
   grid-template-areas: "title website" "image paragraphs";
   overflow: hidden;
   max-width: 100%;
+  margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
   .place {
     grid-template-columns: minmax(1%, 440px) 1fr;
-    column-gap: 32px;
+    column-gap: 30px;
+    padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 768px) {
   .place {
     grid-template-columns: minmax(1%, 340px) 1fr;
-    column-gap: 26px;
-    margin: 0 auto;
+    padding: 0 4px 9px;
   }
 }
 
@@ -28,8 +29,11 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 320px) {
   .place {
-    grid-gap: 32px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
   }
 }

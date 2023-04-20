@@ -4,11 +4,10 @@
     line-height: 22px;
     font-weight: 400;
     position: relative;
-    padding-top: 20px;
-    margin-top: 10px;
+    margin: 25px 0 10px 0;
   }
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     .cover__subtitle {
-      margin-bottom: 85px;
+      font-weight: 400;
     }
   }

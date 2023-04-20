@@ -5,13 +5,8 @@
     line-height: 76px;
     font-weight: 900;
     position: relative;
-    margin-top: 15px;
   }
-  @media (max-width: 1025px) {
-    .cover__title {
-     margin-top: 50px;
-    }
-  }
+
 
   @media screen and (max-width: 650px) {
     .cover__title {

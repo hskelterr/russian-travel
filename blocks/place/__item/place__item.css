@@ -1,8 +1,14 @@
 .place__item {
     display: grid;
-    column-gap: 40px;
-    row-gap: 48px;
+    max-width: 484px;
+    font-size: 18px;
+    line-height: 1.63;
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
+  
 
 @media screen and (max-width: 1024px) {
     .place__item {
@@ -13,8 +19,8 @@
 
 @media screen and (max-width: 768px) {
     .place__item {
-        column-gap: 28px;
-        row-gap: 48px;
+       margin: 0 0 5px;
+       font-size: 16px;
     }
 }
 
@@ -22,8 +28,7 @@
     .place__item {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        max-width: 100%;
+        margin: 20px 12px;
     }
 
 }
